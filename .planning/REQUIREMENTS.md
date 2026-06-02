@@ -7,9 +7,9 @@
 
 ### CLI Commands
 
-- [ ] **CMD-01**: User can run `todo add "<text>"` to create a new to-do item
-- [ ] **CMD-02**: User can run `todo list` to display all pending items with their IDs and text
-- [ ] **CMD-03**: User can run `todo done <id>` to permanently remove an item by ID
+- [x] **CMD-01**: User can run `todo add "<text>"` to create a new to-do item
+- [x] **CMD-02**: User can run `todo list` to display all pending items with their IDs and text
+- [x] **CMD-03**: User can run `todo done <id>` to permanently remove an item by ID
 - [ ] **CMD-04**: Running `todo` or an unknown subcommand prints usage help and exits cleanly
 
 ### Storage
@@ -55,9 +55,9 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| CMD-01 | Phase 1 | Pending |
-| CMD-02 | Phase 1 | Pending |
-| CMD-03 | Phase 1 | Pending |
+| CMD-01 | Phase 1 | Complete |
+| CMD-02 | Phase 1 | Complete |
+| CMD-03 | Phase 1 | Complete |
 | CMD-04 | Phase 2 | Pending |
 | STR-01 | Phase 1 | Pending |
 | STR-02 | Phase 1 | Pending |
@@ -67,6 +67,7 @@
 | CON-01 | Phase 1 | Pending |
 
 **Coverage:**
+
 - v1 requirements: 10 total
 - Mapped to phases: 10
 - Unmapped: 0 ✓
