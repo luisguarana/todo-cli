@@ -10,7 +10,7 @@
 - [x] **CMD-01**: User can run `todo add "<text>"` to create a new to-do item
 - [x] **CMD-02**: User can run `todo list` to display all pending items with their IDs and text
 - [x] **CMD-03**: User can run `todo done <id>` to permanently remove an item by ID
-- [ ] **CMD-04**: Running `todo` or an unknown subcommand prints usage help and exits cleanly
+- [x] **CMD-04**: Running `todo` or an unknown subcommand prints usage help and exits cleanly
 
 ### Storage
 
@@ -20,8 +20,8 @@
 
 ### Error Handling
 
-- [ ] **ERR-01**: `todo done <id>` prints a clear message and exits non-zero if the ID does not exist
-- [ ] **ERR-02**: `todo list` and `todo done` handle a missing `todos.json` gracefully (no crash)
+- [x] **ERR-01**: `todo done <id>` prints a clear message and exits non-zero if the ID does not exist
+- [x] **ERR-02**: `todo list` and `todo done` handle a missing `todos.json` gracefully (no crash)
 
 ### Constraints
 
@@ -58,12 +58,12 @@
 | CMD-01 | Phase 1 | Complete |
 | CMD-02 | Phase 1 | Complete |
 | CMD-03 | Phase 1 | Complete |
-| CMD-04 | Phase 2 | Pending |
+| CMD-04 | Phase 2 | Complete |
 | STR-01 | Phase 1 | Complete |
 | STR-02 | Phase 1 | Complete |
 | STR-03 | Phase 1 | Complete |
-| ERR-01 | Phase 2 | Pending |
-| ERR-02 | Phase 2 | Pending |
+| ERR-01 | Phase 2 | Complete |
+| ERR-02 | Phase 2 | Complete |
 | CON-01 | Phase 1 | Complete |
 
 **Coverage:**

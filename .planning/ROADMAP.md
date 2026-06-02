@@ -51,7 +51,7 @@ Plans:
   2. Running `todo done 99` when ID 99 does not exist prints a clear message and exits non-zero
   3. Running `todo list` or `todo done <id>` when todos.json does not yet exist produces no crash or stack trace
 
-**Plans:** 1 plan
+**Plans:** 1/1 plans complete
 Plans:
 
 - [x] 02-01-PLAN.md — Add usage help, ID guard, and missing-file graceful handling (Wave 1)
@@ -64,4 +64,4 @@ Phases execute in numeric order: 1 → 2
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Core CLI | 2/2 | Complete   | 2026-06-02 |
-| 2. Hardening | 1/1 | Complete     | 2026-06-02 |
+| 2. Hardening | 1/1 | Complete    | 2026-06-02 |
