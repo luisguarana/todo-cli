@@ -5,6 +5,13 @@ const path = require('path');
 
 const TODOS_PATH = path.join(process.cwd(), 'todos.json');
 
+function printUsage() {
+  console.log('Usage:');
+  console.log('  todo add <text>    Add a new to-do item');
+  console.log('  todo list          List all to-do items');
+  console.log('  todo done <id>     Mark item done (removes it)');
+}
+
 function readTodos() {
   try {
     const raw = fs.readFileSync(TODOS_PATH, 'utf8');
@@ -43,6 +50,10 @@ if (command === 'add') {
   const id = parseInt(process.argv[3], 10);
   const todos = readTodos();
   const index = todos.findIndex(function(item) { return item.id === id; });
+  if (index === -1) {
+    console.log('No todo with ID ' + id + '.');
+    process.exit(1);
+  }
   const removed = todos[index];
   todos.splice(index, 1);
   for (let i = 0; i < todos.length; i++) {
@@ -50,4 +61,7 @@ if (command === 'add') {
   }
   writeTodos(todos);
   console.log('Done: removed "' + removed.text + '"');
+} else {
+  printUsage();
+  process.exit(0);
 }
