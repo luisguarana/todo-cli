@@ -14,9 +14,9 @@
 
 ### Storage
 
-- [ ] **STR-01**: Items are persisted to `todos.json` in the current working directory
-- [ ] **STR-02**: `todos.json` is created automatically on the first `todo add` if it does not exist
-- [ ] **STR-03**: Each item stored as `{ "id": <number>, "text": "<string>" }` in a JSON array
+- [x] **STR-01**: Items are persisted to `todos.json` in the current working directory
+- [x] **STR-02**: `todos.json` is created automatically on the first `todo add` if it does not exist
+- [x] **STR-03**: Each item stored as `{ "id": <number>, "text": "<string>" }` in a JSON array
 
 ### Error Handling
 
@@ -25,7 +25,7 @@
 
 ### Constraints
 
-- [ ] **CON-01**: Zero external npm dependencies — Node.js built-ins only (fs, path, process)
+- [x] **CON-01**: Zero external npm dependencies — Node.js built-ins only (fs, path, process)
 
 ## v2 Requirements
 
@@ -59,12 +59,12 @@
 | CMD-02 | Phase 1 | Complete |
 | CMD-03 | Phase 1 | Complete |
 | CMD-04 | Phase 2 | Pending |
-| STR-01 | Phase 1 | Pending |
-| STR-02 | Phase 1 | Pending |
-| STR-03 | Phase 1 | Pending |
+| STR-01 | Phase 1 | Complete |
+| STR-02 | Phase 1 | Complete |
+| STR-03 | Phase 1 | Complete |
 | ERR-01 | Phase 2 | Pending |
 | ERR-02 | Phase 2 | Pending |
-| CON-01 | Phase 1 | Pending |
+| CON-01 | Phase 1 | Complete |
 
 **Coverage:**
 

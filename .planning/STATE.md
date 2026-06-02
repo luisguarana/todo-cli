@@ -4,7 +4,7 @@ milestone: v1.0
 milestone_name: milestone
 status: executing
 stopped_at: Phase 1 context gathered
-last_updated: "2026-06-02T15:09:59.229Z"
+last_updated: "2026-06-02T15:11:02.879Z"
 last_activity: 2026-06-02 — Phase 1 plans created (2 plans, wave 1)
 progress:
   total_phases: 2
@@ -66,6 +66,7 @@ Recent decisions affecting current work:
 - `done` removes item permanently — no completed-item archive
 - Zero external npm dependencies — Node.js built-ins only
 - [Phase ?]: bin field placed after main field per conventional package.json ordering
+- [Phase ?]: Per D-02 and package.json type:commonjs
 
 ### Pending Todos
 
@@ -83,6 +84,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-06-02T15:09:15.909Z
+Last session: 2026-06-02T15:11:02.868Z
 Stopped at: Phase 1 context gathered
 Resume file: .planning/phases/01-core-cli/01-CONTEXT.md
