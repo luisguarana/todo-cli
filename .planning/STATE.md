@@ -1,10 +1,9 @@
 ---
 gsd_state_version: 1.0
 milestone: v1.0
-milestone_name: milestone
-status: v1.0 shipped — pushed to github.com/luisguarana/todo-cli
-stopped_at: context exhaustion at 75% (2026-06-02)
-last_updated: "2026-06-02T17:11:21.810Z"
+milestone_name: MVP
+status: v1.0 archived — milestone complete
+last_updated: "2026-06-02T00:00:00.000Z"
 last_activity: 2026-06-02
 progress:
   total_phases: 2
@@ -18,10 +17,10 @@ progress:
 
 ## Project Reference
 
-See: .planning/PROJECT.md (updated 2026-06-02)
+See: .planning/PROJECT.md (updated 2026-06-02 after v1.0 milestone)
 
 **Core value:** A user can add, view, and mark tasks done entirely from the terminal with zero setup.
-**Current focus:** Phase 02 — hardening COMPLETE
+**Current focus:** Planning next milestone
 
 ## Current Position
 
