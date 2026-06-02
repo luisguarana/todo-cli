@@ -2,16 +2,16 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: executing
-stopped_at: Phase 1 context gathered
-last_updated: "2026-06-02T15:55:19.042Z"
-last_activity: 2026-06-02 — Phase 1 plans created (2 plans, wave 1)
+status: complete
+stopped_at: Phase 02 Plan 01 complete
+last_updated: "2026-06-02T16:08:00.000Z"
+last_activity: 2026-06-02 -- Phase 02 Plan 01 executed successfully
 progress:
   total_phases: 2
-  completed_phases: 1
-  total_plans: 2
-  completed_plans: 2
-  percent: 50
+  completed_phases: 2
+  total_plans: 3
+  completed_plans: 3
+  percent: 100
 ---
 
 # Project State
@@ -21,38 +21,40 @@ progress:
 See: .planning/PROJECT.md (updated 2026-06-02)
 
 **Core value:** A user can add, view, and mark tasks done entirely from the terminal with zero setup.
-**Current focus:** Phase 1 — Core CLI
+**Current focus:** Phase 02 — hardening COMPLETE
 
 ## Current Position
 
-Phase: 1 of 2 (Core CLI)
-Plan: 2 of 2 in current phase
-Status: Planned — ready to execute
-Last activity: 2026-06-02 — Phase 1 plans created (2 plans, wave 1)
+Phase: 02 (hardening) — COMPLETE
+Plan: 1 of 1 — COMPLETE
+Status: All plans complete
+Last activity: 2026-06-02 -- Phase 02 Plan 01 executed successfully
 
-Progress: [░░░░░░░░░░] 0%
+Progress: [██████████] 100%
 
 ## Performance Metrics
 
 **Velocity:**
 
-- Total plans completed: 0
-- Average duration: —
-- Total execution time: 0 hours
+- Total plans completed: 3
+- Average duration: ~8 min
+- Total execution time: ~24 min
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| - | - | - | - |
+| 01-core-cli | 2 | ~16m | ~8m |
+| 02-hardening | 1 | ~8m | ~8m |
 
 **Recent Trend:**
 
-- Last 5 plans: —
-- Trend: —
+- Last 5 plans: 8m, 4m, 8m
+- Trend: Consistent
 
 *Updated after each plan completion*
-| Phase 01-core-cli P02 | 4 | 1 tasks | 1 files |
+| Phase 02-hardening P01 | 8m | 1 tasks | 1 files |
+| Phase 01-core-cli P02 | 4m | 1 tasks | 1 files |
 | Phase 01-core-cli P01 | 8m | 1 tasks | 1 files |
 
 ## Accumulated Context
@@ -65,8 +67,11 @@ Recent decisions affecting current work:
 - todos.json stored in CWD (not home dir) for per-directory isolation
 - `done` removes item permanently — no completed-item archive
 - Zero external npm dependencies — Node.js built-ins only
-- [Phase ?]: bin field placed after main field per conventional package.json ordering
-- [Phase ?]: Per D-02 and package.json type:commonjs
+- [Phase 01-02]: bin field placed after main field per conventional package.json ordering
+- [Phase 01-02]: Per D-02 and package.json type:commonjs
+- [Phase 02-01]: Usage block printed to stdout (not stderr) — exits 0 so shell pipes work
+- [Phase 02-01]: Not-found message includes requested ID for user clarity
+- [Phase 02-01]: Missing todos.json + done <id> reuses ENOENT [] return — no separate branch needed
 
 ### Pending Todos
 
@@ -84,6 +89,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-06-02T15:11:02.868Z
-Stopped at: Phase 1 context gathered
-Resume file: .planning/phases/01-core-cli/01-CONTEXT.md
+Last session: 2026-06-02T16:08:00.000Z
+Stopped at: Completed 02-01-PLAN.md
+Resume file: None

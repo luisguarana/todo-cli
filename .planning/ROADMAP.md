@@ -14,7 +14,7 @@ Two phases deliver the complete tool. Phase 1 ships a working CLI that adds, lis
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Core CLI** - Working add/list/done commands with todos.json persistence (completed 2026-06-02)
-- [ ] **Phase 2: Hardening** - Graceful error handling and usage help on bad input
+- [x] **Phase 2: Hardening** - Graceful error handling and usage help on bad input (completed 2026-06-02)
 
 ## Phase Details
 
@@ -54,7 +54,7 @@ Plans:
 **Plans:** 1 plan
 Plans:
 
-- [ ] 02-01-PLAN.md — Add usage help, ID guard, and missing-file graceful handling (Wave 1)
+- [x] 02-01-PLAN.md — Add usage help, ID guard, and missing-file graceful handling (Wave 1)
 
 ## Progress
 
@@ -64,4 +64,4 @@ Phases execute in numeric order: 1 → 2
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Core CLI | 2/2 | Complete   | 2026-06-02 |
-| 2. Hardening | 0/1 | Not started | - |
+| 2. Hardening | 1/1 | Complete     | 2026-06-02 |
