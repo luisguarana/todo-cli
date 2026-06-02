@@ -59,7 +59,7 @@ Each task was committed atomically:
 
 1. **Task 1: Add bin field to package.json** - `4f33c84` (feat)
 
-**Plan metadata:** (pending final docs commit)
+**Plan metadata:** `cde6b30` (docs: complete bin-field plan)
 
 ## Files Created/Modified
 
