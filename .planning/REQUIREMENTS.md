@@ -55,22 +55,22 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| CMD-01 | — | Pending |
-| CMD-02 | — | Pending |
-| CMD-03 | — | Pending |
-| CMD-04 | — | Pending |
-| STR-01 | — | Pending |
-| STR-02 | — | Pending |
-| STR-03 | — | Pending |
-| ERR-01 | — | Pending |
-| ERR-02 | — | Pending |
-| CON-01 | — | Pending |
+| CMD-01 | Phase 1 | Pending |
+| CMD-02 | Phase 1 | Pending |
+| CMD-03 | Phase 1 | Pending |
+| CMD-04 | Phase 2 | Pending |
+| STR-01 | Phase 1 | Pending |
+| STR-02 | Phase 1 | Pending |
+| STR-03 | Phase 1 | Pending |
+| ERR-01 | Phase 2 | Pending |
+| ERR-02 | Phase 2 | Pending |
+| CON-01 | Phase 1 | Pending |
 
 **Coverage:**
 - v1 requirements: 10 total
-- Mapped to phases: 0
-- Unmapped: 10 ⚠️ (roadmap not yet created)
+- Mapped to phases: 10
+- Unmapped: 0 ✓
 
 ---
 *Requirements defined: 2026-06-02*
-*Last updated: 2026-06-02 after initial definition*
+*Last updated: 2026-06-02 after roadmap creation*
