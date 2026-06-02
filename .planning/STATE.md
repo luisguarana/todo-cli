@@ -2,9 +2,9 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: completed
+status: v1.0 shipped — pushed to github.com/luisguarana/todo-cli
 stopped_at: context exhaustion at 75% (2026-06-02)
-last_updated: "2026-06-02T16:56:39.138Z"
+last_updated: "2026-06-02T17:11:21.810Z"
 last_activity: 2026-06-02
 progress:
   total_phases: 2
@@ -27,7 +27,7 @@ See: .planning/PROJECT.md (updated 2026-06-02)
 
 Phase: 02
 Plan: Not started
-Status: All plans complete
+Status: v1.0 shipped — pushed to github.com/luisguarana/todo-cli
 Last activity: 2026-06-02
 
 Progress: [██████████] 100%
