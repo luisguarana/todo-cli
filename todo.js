@@ -25,18 +25,28 @@ function readTodos() {
 }
 
 function writeTodos(todos) {
-  fs.writeFileSync(TODOS_PATH, JSON.stringify(todos, null, 2));
+  try {
+    fs.writeFileSync(TODOS_PATH, JSON.stringify(todos, null, 2));
+  } catch (err) {
+    console.error('Error: could not save todos.json — ' + err.message);
+    process.exit(1);
+  }
 }
 
 const command = process.argv[2];
 
 if (command === 'add') {
   const text = process.argv[3];
+  if (!text || text.trim() === '') {
+    console.error('Error: please provide a task description.');
+    console.error('  Usage: todo add <text>');
+    process.exit(1);
+  }
   const todos = readTodos();
   const newId = todos.length === 0 ? 1 : Math.max(...todos.map(i => i.id)) + 1;
-  todos.push({ id: newId, text: text });
+  todos.push({ id: newId, text: text.trim() });
   writeTodos(todos);
-  console.log('Added: ' + text + ' (ID: ' + newId + ')');
+  console.log('Added: ' + text.trim() + ' (ID: ' + newId + ')');
 } else if (command === 'list') {
   const todos = readTodos();
   if (todos.length === 0) {
@@ -47,7 +57,17 @@ if (command === 'add') {
     });
   }
 } else if (command === 'done') {
-  const id = parseInt(process.argv[3], 10);
+  const rawId = process.argv[3];
+  if (!rawId) {
+    console.error('Error: please provide a todo ID.');
+    console.error('  Usage: todo done <id>');
+    process.exit(1);
+  }
+  const id = parseInt(rawId, 10);
+  if (isNaN(id)) {
+    console.error('Error: ID must be a number, got: ' + rawId);
+    process.exit(1);
+  }
   const todos = readTodos();
   const index = todos.findIndex(function(item) { return item.id === id; });
   if (index === -1) {
@@ -56,12 +76,9 @@ if (command === 'add') {
   }
   const removed = todos[index];
   todos.splice(index, 1);
-  for (let i = 0; i < todos.length; i++) {
-    todos[i].id = i + 1;
-  }
   writeTodos(todos);
   console.log('Done: removed "' + removed.text + '"');
 } else {
   printUsage();
-  process.exit(0);
+  process.exit(1);
 }
